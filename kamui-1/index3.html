@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kamuii</title>
+    <link rel="stylesheet" href="style3.css">
+    <link rel="shortcut icon" href="Screenshot 2023-12-01 212213.png" type="image/x-icon">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/solid.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/fontawesome.min.css">
+</head>
+<body>
+    
+   <div class="player">
+       <div class="wrapper">
+           <div class="details">
+                <div class="track-name">Track Name</div>
+              <div class="track-art"> <img src="" alt=""></div>
+               
+               <div class="track-artist">Track Artist</div>
+           </div>
+
+           <div class="slider_container">
+               <div class="current-time">00:00</div>
+                <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+                <div class="total-duration">00:00</div>
+           </div>
+
+           <div class="slider_container">
+               <i class="fa fa-volume-down"></i>
+                <input type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume()">
+                <i class="fa fa-volume-up"></i>
+           </div>
+
+           <div class="buttons">
+               <div class="repeat-track" onclick="repeat-track()">            
+                <!--icon lagana hai -->
+                   <i class=" fa fa-repeat fa-2x" title="random"></i>
+               </div>
+               <div class="prev-track" onclick="prevTrack()">
+                    <i class="fa fa-step-backward fa-2x"></i>
+                </div>
+                <div class="playpause-track" onclick="playpauseTrack()">
+                    <i class="fa fa-play-circle fa-5x"></i>
+                </div>
+                <div class="next-track" onclick="nextTrack()">
+                    <i class="fa fa-step-forward fa-2x"></i>
+                </div>
+                <div class="replay" onclick="replay()">
+                    <i class="fa fa-repeat fa-2x" title="replay"></i>
+                </div>
+           </div>
+
+          
+       </div>
+   </div>
+   <table>
+    <tr>
+        <td><section class="playlist active">
+
+            <img src="assets/images/back.png" class="back-btn icon" alt="">
+        
+            <h1 class="title"></h1>
+        
+            <div class="queue active">
+                <div class="queue-cover">
+                    <img src="assets/images/cover 1.png" alt="">
+                    <i class="fas fa-pause"></i>
+                </div>
+                <p class="name">song 1</p>
+            </div>
+           
+        </section>
+        </td>
+        <td><section class="playlist active">
+
+            <img src="assets/images/back.png" class="back-btn icon" alt="">
+        
+            <h1 class="title"></h1>
+        
+            <div class="queue active">
+                <div class="queue-cover">
+                    <img src="assets/images/cover 1.png" alt="">
+                    <i class="fas fa-pause"></i>
+                </div>
+                <p class="name">song 2</p>
+            </div>
+            
+        </section>
+        </td>
+        <td><section class="playlist active">
+
+            <img src="assets/images/back.png" class="back-btn icon" alt="">
+            <i class="fas fa-pause"></i>
+        
+            <h1 class="title"></h1>
+        
+            <div class="queue active">
+                <div class="queue-cover">
+                    <img src="yo yo.jpeg" alt="">
+                    <i class="fas fa-pause"></i>
+                    
+                </div>
+                <p class="name">song 3</p>
+            </div>
+            
+        </section>
+        </td>
+        <td><section class="playlist active">
+
+            <img src="assets/images/back.png" class="back-btn icon" alt="">
+        
+            <h1 class="title"></h1>
+        
+            <div class="queue active">
+                <div class="queue-cover">
+                    <img src="Screenshot 2023-12-01 220728.png" alt="">
+                   
+                </div>
+                <p class="name">song 4</p>
+            </div>
+           
+        </section>
+        </td>
+        <td><section class="playlist active">
+
+            <img src="assets/images/back.png" class="back-btn icon" alt="">
+        
+            <h1 class="title"></h1>
+        
+            <div class="queue active">
+                <div class="queue-cover">
+                    <img src="After Hours.jpeg" alt="">
+                    
+                </div>
+                <p class="name">song 5</p>
+            </div>
+           
+        </section></td>
+        <td><section class="playlist active">
+
+            <img src="assets/images/back.png" class="back-btn icon" alt="">
+        
+            <h1 class="title"></h1>
+        
+            <div class="queue active">
+                <div class="queue-cover">
+                    <img src="assets/images/cover 1.png" alt="">
+                    <i class="fas fa-pause"></i>
+                </div>
+                <p class="name">song 6</p>
+            </div>
+           
+        </section></td>
+        <td><section class="playlist active">
+
+            <img src="assets/images/back.png" class="back-btn icon" alt="">
+        
+            <h1 class="title"></h1>
+        
+            <div class="queue active">
+                <div class="queue-cover">
+                    <img src="assets/images/cover 1.png" alt="">
+                    <i class="fas fa-pause"></i>
+                </div>
+                <p class="name">song 7</p>
+            </div>
+           
+        </section></td>
+    </tr>
+   </table>
+   
+
+   <footer>
+    <div class="credit">
+        <p> CREATOR'S: <a href="mayankshukla1822@gmail.com">    MAYANK</a>,
+            <a href="sumitranjan0355@gmail.com">SUMIT</a> & 
+            <a href="suryanshkushwaha2017@gmail.com">SURYANSH</a> </p>
+
+    </div>
+</footer>
+
+
+     
+    
+    
+    
+    
+  
+</body>
+</html>
