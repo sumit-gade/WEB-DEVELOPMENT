@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "gilroy";
+
+}
+
+html,body{
+    width: 100%;
+    height: 100vh;
+  /*  background-color: black;*/
+
+}
+
+#main{
+    width: 100%;
+    height: 100vh;
+   
+}
+
+#back{
+    width: 100%;
+    height: 100vh;
+   
+}
+#back img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+   
+
+}
+
+#top{
+    pointer-events: none;  /* isse back pe click hoga top pe nahi*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+   
+}
+
+#workingarea{
+    position: relative;
+    margin: 0 auto;  /*center kiya hai aise*/
+    width: 80%;  
+    height: 100vh;
+    max-width: 1920px;
+   /* background-color: #888;*/
+    /*border: 2px solid red;*/
+}
+
+#nav{
+    width: 100%;
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#nav img{
+    height: 60px;
+}
+
+#nleft, #nright{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+#nav a{
+    pointer-events: all;
+    text-decoration: none;  /*niche ki line hatata hai*/
+    text-transform: uppercase;
+    font-size: 13px;
+    
+    letter-spacing: 1px;
+    color: #fff;
+
+
+}
+
+#hero{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0%,-50%);  /* for center (widht,height)*/
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+   /* height: 100px;*/
+    /*background-color:black;*/
+
+}
+
+#heroleft{
+   min-width: 50%;
+  /* height: 100px;*/
+   /*background-color: yellow;*/
+
+}
+
+#heroleft .elem {
+    height: 9vw;
+   /* background-color: red;*/
+    overflow: hidden;
+}
+
+
+#heroleft .elem h1{
+    
+    line-height: .9;/* move text upwards*/
+    font-family: "kajiro";
+    color: #fff;
+    font-weight: 100;
+    font-size: 11vw;
+}
+
+#heroleft button{
+    pointer-events: all;
+    padding: .8vw 3vw; /*   12px , 32px updown,rightleft*/
+    font-size: 3vw;
+    margin-top: 2vw;
+    font-family:"kajiro";
+    
+    
+
+}
+
+button{
+    border-radius: 5px;
+    
+}
+
+#heroright{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 17%;
+    font-family: 'Trebuchet MS', sans-serif;
+    /*height: 100px;*/
+   /*background-color: green;*/
+   color: #fff;
+
+ 
+ }
+ #heroright p{
+  
+    font-size: 14px;
+    font-weight: 300;
+    text-align: right;
+    font-family: 'Trebuchet MS', sans-serif;
+
+ }
+
+ #heroright #imagediv{
+    width: 100%;
+    height: 170px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background-image: url(1704456270557.jpg);
+    border-radius: 5px;
+    background-size: cover;
+    background-position: center;
+
+
+ }
+
+ #heroright p:nth-child(3){
+    margin-bottom:100px;
+ }
+
